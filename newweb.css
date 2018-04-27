@@ -1,0 +1,44 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.col-md-8{
+  background-color: black;
+}
+
+.col-md-4{
+  border-style: solid;
+  border-right-color: white;
+
+}
+
+.btn-primary{
+  background-color:#62b6e0;
+  color: #FFF;
+}
+
+.btn-primary:hover {
+    /* here copy default .btn class styles */
+    cursor:default !important;
+    /* or something like that */
+}
+
+.tabArea{
+  border-style: solid;
+  border-color: blue;
+}
+
+.imageArea{
+  border-style: solid;
+  border-color: red;
+}
+
+.tableArea{
+		margin: 10px;
+}
+
+.buttonGroup{
+    padding-top: 3em;
+}

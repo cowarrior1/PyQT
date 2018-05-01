@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="../static/styles/index.css"> -->
+
+  <!-- for server/flask -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#myTab a").click(function(e){
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  });
+
+</script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <form method="post" id= "form">
+          <div class="buttonGroup">
+            <div class = "topButtons">
+              <button type="button" class="btn btn-primary btn-sm">1</button>
+              <button type="button" class="btn btn-primary btn-sm">2</button>
+              <button type="button" class="btn btn-primary btn-sm">R</button>
+              <button type="button" class="btn btn-primary btn-sm">C</button>
+              <input type="text" id ="textbox" name="browseTextBox" value=... disabled>
+              <button type="button" id ="Browse" class="btn btn-sm">Browse</button>
+            </div>
+            <div class= "lowButtons">
+              <button type="button" action= "{{  }}" class="btn btn-primary btn-sm" id="getData">Voice Control</button>
+              <button type="button" class="btn btn-primary btn-sm">S</button>
+              <label class="radio-inline">
+                <input type="radio" name="optradio">Original
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio">Aligned
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class ="tabArea">
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="active"><a href="#sectionA">VA30</a></li>
+            <li><a href="#sectionB">VB10</a></li>
+            <li><a href="#sectionC">VB20</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="sectionA" class="tab-pane fade in active">
+              <div class = "imageTextArea">
+                <p> Reference Image </p>
+              </div>
+              <div class = "imageArea">
+                <figure class="figure">
+                  <img src="https://img.aws.livestrongcdn.com/ls-article-image-673/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/edb7284fbbc14a3f83136d387d3183f1" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                </figure>
+              </div>
+              <div class = "rangeTypes">
+                <p> Range Types </p>
+              </div>
+              <div class= "tableArea">
+                {{ rows }}
+              </div>
+            </div>
+            <div id="sectionB" class="tab-pane fade">
+            </div>
+            <div id="sectionC" class="tab-pane fade">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="gridView">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item3"></div>
+          <!-- <div class="item1"></div> -->
+        </div>
+        <!-- <div class="gridView">
+          <div class="item1"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div>
+        <div class="gridView">
+          <div class="item1"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+<script>
+$(function(){
+  $('#getData').click(function(){
+    $.ajax({
+      url: '/get_data',
+      type: 'GET',
+      dat
+    })
+
+
+  })
+
+}
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+#! python2
+
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'untitled.ui'
@@ -6,9 +8,12 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
+import mysql.connector
+
 
 class Ui_Dialog(object):
+
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(1113, 908)
@@ -189,10 +194,11 @@ class Ui_Dialog(object):
         self.rangeTypes.setObjectName("rangeTypes")
         self.tableWidget = QtWidgets.QTableWidget(self.rangeTypes)
         self.tableWidget.setGeometry(QtCore.QRect(10, 20, 351, 441))
-        self.tableWidget.setStyleSheet("background-color: rgb(223, 223, 223);")
         self.tableWidget.setRowCount(29)
         self.tableWidget.setColumnCount(59)
         self.tableWidget.setObjectName("tableWidget")
+        self.referenceImages.raise_()
+        self.rangeTypes.raise_()
         self.bottomFrame.addTab(self.va30, "")
         self.vb10 = QtWidgets.QWidget()
         self.vb10.setObjectName("vb10")
@@ -227,4 +233,3 @@ class Ui_Dialog(object):
         self.bottomFrame.setTabText(self.bottomFrame.indexOf(self.va30), _translate("Dialog", "VA30"))
         self.bottomFrame.setTabText(self.bottomFrame.indexOf(self.vb10), _translate("Dialog", "VB10"))
         self.bottomFrame.setTabText(self.bottomFrame.indexOf(self.vb20), _translate("Dialog", "VB20"))
-

@@ -40,7 +40,7 @@
               <button type="button" id ="Browse" class="btn btn-sm">Browse</button>
             </div>
             <div class= "lowButtons">
-              <button type="button" action= "{{  }}" class="btn btn-primary btn-sm" id="getData">Voice Control</button>
+              <button type="button" class="btn btn-primary btn-sm" id="getData">Voice Control</button>
               <button type="button" class="btn btn-primary btn-sm">S</button>
               <label class="radio-inline">
                 <input type="radio" name="optradio">Original
@@ -105,22 +105,6 @@
       </div>
     </div>
   </div>
-
-<script>
-$(function(){
-  $('#getData').click(function(){
-    $.ajax({
-      url: '/get_data',
-      type: 'GET',
-      dat
-    })
-
-
-  })
-
-}
-
-</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

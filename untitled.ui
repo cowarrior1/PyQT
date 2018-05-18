@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1113</width>
+    <height>908</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: black;</string>
+  </property>
+  <widget class="QFrame" name="topFrame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>9</y>
+     <width>401</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color:black
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="btn1">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="btn2">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="btnR">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>R</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color: white</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2" rowspan="2">
+     <widget class="QPushButton" name="btnC">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="browse">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>Browse..</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="voiceControl">
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>Voice Control</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QRadioButton" name="original">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Original</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="btnS">
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>184</red>
+            <green>204</green>
+            <blue>237</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #b8cced</string>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QRadioButton" name="aligned">
+      <property name="text">
+       <string>Aligned</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>btn2</zorder>
+   <zorder>btn1</zorder>
+   <zorder>btnR</zorder>
+   <zorder>btnC</zorder>
+   <zorder>btnS</zorder>
+   <zorder>original</zorder>
+   <zorder>aligned</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>browse</zorder>
+   <zorder>voiceControl</zorder>
+  </widget>
+  <widget class="QTabWidget" name="bottomFrame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>129</y>
+     <width>411</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget{
+
+}
+
+
+</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <widget class="QWidget" name="va30">
+    <attribute name="title">
+     <string>VA30</string>
+    </attribute>
+    <widget class="QGroupBox" name="referenceImages">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>391</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Siemens Serif</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+background-color: black;
+color: white;
+}
+
+
+QGroupBox::title{
+	background-color: #374af2
+
+}
+</string>
+     </property>
+     <property name="title">
+      <string>Reference Images</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="referenceImageFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="rangeTypes">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>391</width>
+       <height>895</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Siemens Serif</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{
+background-color: black;
+color: white;
+}
+
+
+QGroupBox::title{
+	background-color: #374af2
+
+}
+</string>
+     </property>
+     <property name="title">
+      <string>Range Types</string>
+     </property>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>351</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>29</number>
+      </property>
+      <property name="columnCount">
+       <number>58</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>Volume_Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DicomPath</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Series</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SeriesDescription</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PatientsName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PatientsAge</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PatientsSex</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Modality</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BodyPartExamined</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Manufacturer</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ProtocolName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>StudyDescription</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>StudyInstanceUID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FrameOfReferenceUID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RequestedProcedureDescription</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PixelSpacing</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ImageOrientationPatient</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PatientPosition</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SliceThickness</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ConvolutionKernel</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PhotometricInterpretation</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>WindowCenter</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>WindowWidth</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ImageType</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ImageComments</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NumOfSlices</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Width</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Height</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Depth</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>x_min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>y_min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>z_min</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>x_max</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>y_max</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>z_max</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>origin_x</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>origin_y</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>origin_z</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>space_x</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>space_y</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>space-z</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Orientation</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Box_str</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>LastAccessed</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Comment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MagneticFieldStrength</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Flip Angle</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RepetitionTime</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EchoTime</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Imaging Frequency</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EchoTrainLength</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SequenceName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ImagedNucleus</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TransmitCoilName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>InversionTime</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ScanningSequence</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CoilList</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DicomFiles</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="vb10">
+    <attribute name="title">
+     <string>VB10</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="vb20">
+    <attribute name="title">
+     <string>VB20</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>671</width>
+     <height>891</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <zorder>tableWidget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

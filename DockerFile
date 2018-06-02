@@ -10,7 +10,7 @@ ADD . /NewPyApp
 # Install any needed packages specified in requirements.txt
 # RUN pip install --trusted-host pypi.python.org -r requirements.txt --proxy 194.138.0.10:9400
 
-RUN conda env create -f env.yaml
+RUN while read requirement; do pip install $requirement --proxy 192.138.0.10:9400 || conda install --yes $requirement --proxy 192.138.0.10:9400; done < requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
